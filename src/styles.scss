@@ -25,15 +25,22 @@ body {
   }
 
   .spacex-item{
+    width: calc(50% - 27px) !important;
+    min-width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .spacex-item{
     width: calc(100% - 27px) !important;
   }
 }
 
-
 @media only screen and (max-width: 600px) {
     .spacex-container {
         .filter {
-          width: 100% !important;
+          width: 300px !important;
         }
     
         .list {
@@ -42,6 +49,9 @@ body {
           .space-list-container{
               overflow: visible;
           }
+        }
+        .spacex-item{
+          width: calc(100% - 27px) !important;
         }
       }
 }
