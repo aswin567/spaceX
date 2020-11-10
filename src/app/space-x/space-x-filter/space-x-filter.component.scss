@@ -1,0 +1,40 @@
+.filter-container{
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 55px;
+    h3{
+        width: 100%;
+        text-align: left;    
+        margin-top: 2px;
+    }
+    .filters{
+        
+        width: 78%;
+        .filter-section{
+            padding-bottom: 20px;
+            label{    
+                text-align: center;
+                margin: auto 12px;
+                margin-bottom: 7px;
+                border-bottom: 1px solid #d4d2d2;
+                box-sizing: border-box;
+                padding-bottom: 4px;
+            }
+            .options{
+                margin: 0 auto;
+                width: 92%;
+                button{
+                    margin: 5px; 
+                    background: #70b98a;
+                    border: none;
+                    color: #fff;
+                    border-radius: 4px;
+                    padding: 7px 10px;
+                }
+            }
+        }
+    }
+}
+.active{
+    background: #206338 !important;
+}

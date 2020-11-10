@@ -1,0 +1,54 @@
+:host {
+  height: 100%;
+}
+
+.space-list-container {
+  height: 100%;
+  width: 100%;    
+  margin-top: -13px;
+  overflow-y: auto;   
+  border-radius: 5px;
+
+  .spacex-item {
+    background: #fff;
+    width: calc(33% - 27px);
+    min-width: 300px;
+    display: inline-block;
+    margin: 13px;
+    padding: 13px;
+    box-sizing: border-box;
+
+    .mission-img {
+
+      background: #eee;
+      padding: 40px;
+      border-radius: 5px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .mission-content{
+        width: 100%;    
+        padding-top: 14px;
+        .mission-heading{
+            font-weight: 600;
+            color: #0a52bf;
+        }
+        .mission-Ids{
+            min-height: 68px;
+        }
+        &>div{
+            padding-top: 10px;
+            label{
+                font-weight: 500;
+            }
+            p{
+                color: #777;
+                margin: 0;
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="spacex-container"  fxLayout="row" fxLayout.lt-sm="column"  fxLayoutAlign="start start">
+<div class="filter">
+    <app-space-x-filter (filterChanged)="onListFilter($event)"></app-space-x-filter>
+</div>
+<div class="list">
+    <app-space-x-details [spaceXList]="spaceXList"></app-space-x-details>
+</div>
+</div>
