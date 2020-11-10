@@ -13,14 +13,14 @@ import { SpaceXService } from './space-x.service';
 export class SpaceXComponent {
   spaceXList: Array<SpaceX>;
 
-  constructor(private router: ActivatedRoute, private spaceXservice: SpaceXService) { 
+  constructor(private router: ActivatedRoute, private spaceXservice: SpaceXService) {
     this.router.data.subscribe((routerData: Data) => {
       this.spaceXList = routerData.spaceResolverService;
     });
   }
 
   onListFilter(filter: SpaceXFilter): void {
-    this.spaceXservice.onGetSpaceXdeatils(filter).subscribe((spaceXlist: Array<SpaceX>)=>{
+    this.spaceXservice.onGetSpaceXdeatils(filter).subscribe((spaceXlist: Array<SpaceX>) => {
       this.spaceXList = spaceXlist;
     });
   }
