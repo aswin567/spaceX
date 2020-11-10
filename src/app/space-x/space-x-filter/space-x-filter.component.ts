@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { SpaceXFilter } from './space-x-filter';
 
 @Component({
@@ -6,20 +6,12 @@ import { SpaceXFilter } from './space-x-filter';
   templateUrl: './space-x-filter.component.html',
   styleUrls: ['./space-x-filter.component.scss']
 })
-export class SpaceXFilterComponent implements OnInit {
+export class SpaceXFilterComponent {
+  @Output() filterChanged: EventEmitter<SpaceXFilter> = new EventEmitter();
   selectedYear: number;
   isLaunch: boolean;
   isLand: boolean;
-  spaceXFilter: SpaceXFilter = {
-    limit: '100'
-  };
-
-  @Output() filterChanged: EventEmitter<SpaceXFilter> = new EventEmitter();
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  spaceXFilter: SpaceXFilter = {};
 
   onSelectYear(year: number): void {
     this.spaceXFilter.launch_year = String(year);

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { SpaceXComponent } from './space-x/space-x.component';
+import { RouterModule, Routes } from '@angular/router';
+
 import { SpaceResolverService } from './space-x/space-resolver.service';
+import { SpaceXComponent } from './space-x/space-x.component';
 
 const routes: Routes = [
   {
