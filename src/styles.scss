@@ -15,11 +15,11 @@ body {
 
   .spacex-container {
     .filter {
-      width: 300px !important;
+      width: 243px !important;
     }
 
     .list {
-      width: calc(100% - 300px) !important;
+      width: calc(100% - 243px) !important;
     }
   }
 
@@ -29,7 +29,7 @@ body {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .spacex-container {
         .filter {
           width: 100% !important;
