@@ -1,6 +1,9 @@
 {
   "name": "space-x",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.16.3"
+  }.
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
