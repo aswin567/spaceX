@@ -1,32 +1,5 @@
 <div class="space-list-container">
     <div class="spacex-item" *ngFor="let spaceItem of spaceXList">
-        <div fxLayout="column" fxLayoutAlign="space-around center">
-            <div class="mission-img" fxLayout="column" fxLayoutAlign="center center">
-                <img [src]="spaceItem.links.mission_patch">
-            </div>
-            <div class="mission-content" fxLayout="column" fxLayoutAlign="space-around start" >
-                <div class="mission-heading">
-                    {{spaceItem.mission_name}} #{{spaceItem.flight_number}}
-                </div>
-                <div class="mission-Ids">
-                    <label>Mission Ids:</label>
-                    <ul>
-                        <li *ngFor="let missionIds of spaceItem.mission_id">{{missionIds}}</li>
-                    </ul>
-                </div>
-                <div class="launch-year" fxLayout="row" fxLayoutAlign="space-evenly center" >
-                    <label>Launch Year : </label>
-                    <p>{{spaceItem.launch_year}}</p>
-                </div>
-                <div class="successful-launch" fxLayout="row" fxLayoutAlign="space-evenly center" >
-                    <label>Successful Launch : </label>
-                    <p>{{spaceItem.launch_success}}</p>
-                </div>
-                <div class="successful-landing" fxLayout="row" fxLayoutAlign="space-evenly center" >
-                    <label>Successful Landing : </label>
-                    <p>{{spaceItem.launch_landing}}</p>
-                </div>
-            </div>
-        </div>
+        <app-space-x-details-item [spaceXItem]="spaceItem"></app-space-x-details-item>
     </div>
 </div>

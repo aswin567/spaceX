@@ -1,0 +1,29 @@
+
+    <div fxLayout="column" fxLayoutAlign="space-around center">
+        <div class="mission-img" fxLayout="column" fxLayoutAlign="center center">
+            <img [src]="spaceXItem.links.mission_patch">
+        </div>
+        <div class="mission-content" fxLayout="column" fxLayoutAlign="space-around start" >
+            <div class="mission-heading">
+                {{spaceXItem.mission_name}} #{{spaceXItem.flight_number}}
+            </div>
+            <div class="mission-Ids">
+                <label>Mission Ids:</label>
+                <ul>
+                    <li *ngFor="let missionIds of spaceXItem.mission_id">{{missionIds}}</li>
+                </ul>
+            </div>
+            <div class="launch-year" fxLayout="row" fxLayoutAlign="space-evenly center" >
+                <label>Launch Year : </label>
+                <p>{{spaceXItem.launch_year}}</p>
+            </div>
+            <div class="successful-launch" fxLayout="row" fxLayoutAlign="space-evenly center" >
+                <label>Successful Launch : </label>
+                <p>{{spaceXItem.launch_success}}</p>
+            </div>
+            <div class="successful-landing" fxLayout="row" fxLayoutAlign="space-evenly center" >
+                <label>Successful Landing : </label>
+                <p>{{landingSucess}}</p>
+            </div>
+        </div>
+    </div>

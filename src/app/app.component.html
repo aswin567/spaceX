@@ -1,3 +1,9 @@
+
+<div class="loading-container">
+  <mat-progress-bar
+  *ngIf="isLoading$ | async" mode="indeterminate">
+  </mat-progress-bar>
+</div>
 <div class="app-container">
   <h2>SpaceX Launch Programs</h2>
   <router-outlet></router-outlet>
