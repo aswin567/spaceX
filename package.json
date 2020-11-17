@@ -9,10 +9,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "prebuildDeploy": "npm run lint",
+    "buildDeploy": "ng build --prod",
+    "postbuildDeploy": "npm run deploy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "deploy": "firebase deploy"
   },
   "private": true,
   "dependencies": {

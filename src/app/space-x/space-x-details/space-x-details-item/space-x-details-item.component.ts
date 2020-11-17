@@ -25,10 +25,12 @@ export class SpaceXDetailsItemComponent implements OnInit {
 
   isLandingSucessfull(rocket: Rocket): boolean{
     const firstStageSucessfull = this.isSatgeSucessfull(rocket.first_stage);
-     return firstStageSucessfull;
+
+    return firstStageSucessfull;
   }
 
   isSatgeSucessfull(stage: Stage): boolean{
+
     return stage.cores.every((value: Cores) => value.land_success);
   }
 }

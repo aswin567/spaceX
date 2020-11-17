@@ -10,9 +10,9 @@ import { AppService } from './app.service';
 })
 export class AppComponent {
   isLoading$: BehaviorSubject<boolean>;
-  
+
   constructor(private router: Router, private appService: AppService){
-    this.router.events.subscribe((event: Event) => {
+    this.router.events.subscribe((event: any) => {
       switch (true) {
         case event instanceof NavigationStart: {
           this.appService.isLoading$.next(true);
